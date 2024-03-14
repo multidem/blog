@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./parts/head.ejs') %>
+<body>
+    <%- include('./parts/nav.ejs') %>
+    <main>
+        <h1>Все записи:</h1>
+            <article>
+                <% if (posts.length) { %>
+                    <% posts.forEach(({ id, title, createdAt, text, author }) => { %>
+              <blockquote>
+              <h2><a href="/all-posts/<%= id %>" title="Подробнее..."><%= title %></a></h2>
+              <p><%= text %></p>
+              <p>Автор: <%= author %></br> 
+              Дата публикации: <%= createdAt.toLocaleDateString() %></p>
+            </blockquote>
+            <% }) %>
+            <% } %>
+           
+        </article>
+    </main>
+</body>
+</html>

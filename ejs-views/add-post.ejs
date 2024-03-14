@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./parts/head.ejs') %>
+<body>
+  <%- include('./parts/nav.ejs') %>
+
+    <main>
+      <h1>Добавить запись</h1>
+      <form id="add-form" method="post" action="/add-post">
+
+        <fieldset name="age">
+          <legend>Новая запись</legend>
+
+          <p><label>Заголовок записи:
+              <input type="text" name="title">
+            </label></p>
+
+          <p><label>Автор:
+              <input type="text" name="author">
+            </label></p>
+
+          <p><label>Текст записи:
+              <textarea name="text"></textarea>
+            </label></p>
+
+          <p><input type="submit" value="Отправить"></p>
+        </fieldset>
+
+      </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./parts/head.ejs') %>
+<body>
+    <%- include('./parts/nav.ejs') %>
+    <main>
+        <article>
+            <blockquote>
+                <h1><%= post.title %></h1>
+                <p>Автор: <%= post.author %></br>
+                 Дата публикации: <%= post.createdAt.toLocaleDateString() || 'дата не указана'%></p>
+                <p><%= post.text %></p>
+                <p><a href="/all-posts"><< Все записи</a> | <a href="/edit/<%= post.id %>">Редактировать</a>
+                    <form id="add-form" method="post" action="/all-posts/<%= post.id %>?_method=DELETE">
+                    <button>Удалить</button>
+                </form>
+                </p> 
+            </blockquote>
+        </article>
+    </main>
+</body>
+</html>

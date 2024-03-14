@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Добавить запись</title>
+  <style>
+    body {
+      background: rgb(95, 158, 160);
+      color: rgb(255, 255, 255);
+    }
+
+    a {
+      color: rgb(255, 255, 255);
+    }
+
+    fieldset {
+      width: 350px;
+      border: 1px solid #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <nav><a href="/">Главная</a> | <a href="/all-posts">Все записи</a> | <a href="/add-post">Добавить запись</a> | <a href="/contacts">Контакты</a></nav>
+  <main>
+    <h1>Добавить запись</h1>
+
+    <form id="add-form">
+
+      <fieldset name="age">
+        <legend>Новая запись</legend>
+
+        <p><label>Заголовок записи:
+            <input type="text" name="title">
+          </label></p>
+
+        <p><label>Автор:
+            <input type="text" name="author">
+          </label></p>
+
+        <p><label>Текст записи:
+            <textarea name="text"></textarea>
+          </label></p>
+
+        <p><input type="submit" value="Отправить"></p>
+      </fieldset>
+
+    </form>
+  </main>
+</body>
+
+</html>

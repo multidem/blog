@@ -1,0 +1,12 @@
+body {
+    background: rgb(95, 158, 160);
+    color: rgb(255, 255, 255);
+  }
+  a {
+    color: rgb(255, 255, 255);
+  }
+
+fieldset {
+    width: 350px;
+    border: 1px solid #fff;
+  }
