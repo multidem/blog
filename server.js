@@ -14,7 +14,6 @@ const successMsg = chalk.blue;
 const app = express();
 const result = dotenv.config();
 const PORT = 3000;
-// const db = '';
 
 mongoose
   .connect(result.parsed.MONGO_URL)
